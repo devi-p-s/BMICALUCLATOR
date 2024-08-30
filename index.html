@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator with Gauge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dist/gauge.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="calculator-box">
+            <h1>BMI Calculator</h1>
+            <div class="input-box">
+                <div class="input-group">
+                    <label for="weight"><i class="fas fa-weight"></i> Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter your weight">
+                </div>
+                <div class="input-group">
+                    <label for="height"><i class="fas fa-ruler-vertical"></i> Height (cm):</label>
+                    <input type="number" id="height" placeholder="Enter your height">
+                </div>
+                <button onclick="calculateBMI()">Calculate BMI</button>
+            </div>
+            <div class="gauge-container">
+                <canvas id="demo" class="gauge"></canvas>
+                <div id="preview-textfield" class="preview-textfield"></div>
+            </div>
+            <div class="result-box">
+                <p>Your BMI: <span id="bmi-number">-</span></p>
+                <p>Condition: <span id="bmi-condition">-</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
